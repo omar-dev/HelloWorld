@@ -29,10 +29,12 @@ class MyHomeScreen extends React.Component {
 
   render() {
     return (
-      <Button
-        onPress={() => this.props.navigation.navigate('Notifications')}
-        title="Go to notifications"
-      />
+      <View style={{ flex:1, paddingTop: 10}}>
+        <Button
+          onPress={() => this.props.navigation.navigate('Notifications')}
+          title="التنبيهات"
+        />
+      </View>
     );
   }
 }
